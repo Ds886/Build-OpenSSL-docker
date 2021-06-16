@@ -9,5 +9,5 @@ cd "/opt/building/openssl-$strOpenSSLVersion"
 ./Configure linux-generic64 --prefix=/opt/out --openssldir=/opt/out/ no-shared no-ssl2 no-ssl3  no-weak-ssl-ciphers  no-err no-engine no-hw
 make -j
 make install_sw
-cd /opt/out
+cd /opt/rel
 tar czf "/opt/rel/openssl-$strOpenSSLVersion-static-$(date "+%Y-%m-%d_%H-%M-%S").tgz" ./*
